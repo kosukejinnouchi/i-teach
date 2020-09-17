@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'teachers#index'
+  devise_for :users
+  root "teachers#index"
+  resources :users, only: [:edit, :update]
 end

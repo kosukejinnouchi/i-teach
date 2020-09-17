@@ -28,6 +28,11 @@
             rgba(255, 255, 255, .1) 70%, rgba(255, 255, 255, .1) 71%, transparent 72%, transparent 89%,
             rgba(255, 255, 255, .1) 90%, rgba(255, 255, 255, .1) 91%, transparent 92%, transparent);
     background-size:50px 50px;
+    &__name {
+      font-size: 30px;
+      color: white;
+      margin-left: 1150px;
+    }
     &__text {
       color: white;
       font-size: 40px;

@@ -4,6 +4,11 @@
       .top-text
         あなたにぴったりの講師を見つけましょう
   .middle-box
+    .middle-box__name
+      - if user_signed_in?
+        ようこそ
+        = current_user.name
+        さん
     .middle-box__text
       講師を選ぶ
     .middle-box__field

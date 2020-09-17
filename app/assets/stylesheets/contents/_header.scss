@@ -91,7 +91,10 @@
       &__new-user:hover {
         color: #ffb43c;
       }
-
+      &__edit-button {
+        color: blue;
+        margin-left: 20px;
+      }
     }
   }
 }
