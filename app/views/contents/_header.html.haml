@@ -1,0 +1,21 @@
+%header.header
+  .header__top
+    .top-page
+      = link_to root_path do
+        = image_tag("material/i-teach-logo.png",class: "icon")
+    .search-form
+      = form_with url: '#', local: true, method: :get, class:"search" do |f|
+        .search__box
+          = f.text_field :keyword, placeholder: "キーワードから探す", class: "search-form"
+          %button{type: "submit", class:'search-btn'}
+            %i.fas.fa-search.search-btn__icon
+  .header__bottom
+    .left-box
+      =link_to "#", class:"left-box__categories" do
+        科目で探す
+    .right-box
+      = link_to '#', class:"right-box__login" do
+        マイページ
+      = link_to '#', method: :delete,class:"right-box__new-user" do
+        ログイン
+   
