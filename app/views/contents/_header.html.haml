@@ -16,8 +16,7 @@
     .right-box
       = link_to '#', class:"right-box__login" do
         マイページ
-      = link_to '#', class:"right-box__new-user" do
-        ログイン
+      = link_to "ログイン", destroy_user_session_path, method: :delete, class:"right-box__new-user" 
       - if user_signed_in?
         = link_to edit_user_path(current_user), class:"right-box__edit-button" do
           = icon('fas', 'cog')

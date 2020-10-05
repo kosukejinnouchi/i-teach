@@ -1,0 +1,27 @@
+.contents
+  .top-box
+    .top-box__contents
+      .top-text
+        あなたにぴったりの教室を見つけましょう
+  .middle-box
+    .middle-box__name
+      - if user_signed_in?
+        ようこそ
+        = current_user.name
+        さん
+    .middle-box__text
+      グループを選ぶ
+    .middle-box__group
+      = link_to new_group_path(current_user), class: "group-link" do
+        新しいグループを作る
+    .bottom-box
+      - current_user.groups.each do |group|
+        .group-list
+          .group-name
+            = group.name
+          .group-message
+            メッセージはまだありません
+          .group-entrance
+            = link_to group_messages_path(group), class: "group-button" do
+              このグループに入る
+    
