@@ -1,0 +1,23 @@
+.chat-main
+  .group-info
+    .current-group
+      = @group.name
+      %ul.member-list
+        Member :
+        %li.name-list
+          - @group.users.each do |name|
+            %li= name.name
+    .edit-btn 
+      = link_to edit_group_path(@group.id), {class: "edit-icon"} do
+        Edit
+  .message-field
+    = render @messages
+  .footer
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+      .form-contents
+        .form
+          = f.text_field :content, class: 'form__input-content', placeholder: 'type a message'
+          = f.label :image, class: 'form__input-image' do
+            = icon('far', 'image')
+            = f.file_field :image, class: 'Hidden'
+          = f.submit 'Send', class: 'form__submit'
