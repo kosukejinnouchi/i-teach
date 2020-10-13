@@ -1,4 +1,28 @@
-# ITeach DB設計
+# Name
+
+I Teach
+学生のための自宅学習用チャットアプリ
+ 
+# Features
+ 
+利用者がチャットを使って学習に関する質問をすることができる。
+アプリが簡潔で使いやすい。
+ 
+# Requirement
+ 
+* haml-rails
+* font-awesome-sass
+* devise
+* carrierwave
+* unicorn
+ 
+# Author
+ 
+* 作成者 陣内康輔
+* E-mail　kousuke1325@icloud.com
+
+# I Teach DB設計
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
