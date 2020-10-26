@@ -3,6 +3,7 @@
    学生用チャットアプリ 「I Teach」
 </p>
 </h1>
+![image](https://user-images.githubusercontent.com/67685531/97123615-04d86a80-1770-11eb-841c-05ddb15b79bf.png)
 
 # Name
 
