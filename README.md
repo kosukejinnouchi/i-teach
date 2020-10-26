@@ -1,3 +1,7 @@
+<p align="center">
+  <!-- ここに配置します -->
+</p>
+
 # Name
 
 I Teach
